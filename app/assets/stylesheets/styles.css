@@ -10,7 +10,7 @@ http://www.bootstrapzero.com
 
 html,
 body {
-    width: 100%;
+    min-width: 100%;
     min-height:100%;
 }
 
