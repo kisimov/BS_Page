@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BSPage</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	  <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+	        <div class="container-fluid">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand page-scroll" href="/"><i class="ion-ios-analytics-outline"></i> Landing Zero</a>
+	            </div>
+	            <div class="navbar-collapse collapse" id="bs-navbar">
+	                <ul class="nav navbar-nav">
+	                    <li>
+	                         <a href="/contacts">Contacts</a>
+	                    </li>
+	               
+	                </ul>
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li>
+	                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+    <%= yield %>
+  </body>
+</html>
