@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
@@ -25,16 +26,21 @@
 	                    <li>
 	                         <a href="/contacts">Contacts</a>
 	                    </li>
+	                    <li>
+	                    	<a href="/about">About</a>
+	                    </li>
 	               
 	                </ul>
 	                <ul class="nav navbar-nav navbar-right">
 	                    <li>
-	                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="/about">About</a>
+	                        <a href="/">Main</a>
 	                    </li>
 	                </ul>
 	            </div>
 	        </div>
 	    </nav>
-    <%= yield %>
+	    <div class ='deer'>
+	        <%= yield %>
+	    </div>
   </body>
 </html>

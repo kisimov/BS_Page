@@ -17,8 +17,13 @@ body {
 body {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
     background-color: #282828;
-    color: #d3d3d3;
+    color: black;
     webkit-tap-highlight-color: #222;
+    background: url(/images/deer.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
 }
 
 hr {
@@ -233,7 +238,6 @@ header {
     color: #fff;
     width: 100%;
     background-color: #c9c9c9;
-    background-image: url('./public/deer.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -521,4 +525,3 @@ img::selection {
 img::-moz-selection {
     color: #fff;
     background: 0 0;
-}
