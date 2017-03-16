@@ -10,7 +10,7 @@
   </head>
 
   <body>
-	  <nav id="topNav" class="navbar navbar-default navbar-fixed-top affix">
+  	  <nav id="topNav" class="navbar navbar-default navbar-fixed-top affix">
 	        <div class="container-fluid">
 	            <div class="navbar-header">
 	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
@@ -32,14 +32,35 @@
 	               
 	                </ul>
 	                <ul class="nav navbar-nav navbar-right">
-	                    <li>
-	                        <a href="/">Main</a>
-	                    </li>
+						<% if user_signed_in? %>
+
+								<li>
+								<%= link_to 'Edit profile', edit_user_registration_path %>
+								</li>
+								
+								<li>
+								<%=link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+								</li>
+							</ul>
+							
+						<% else %>
+
+							<li>
+							<%= link_to 'Sign up', new_user_registration_path %>
+							</li>  
+							<li>
+							<%= link_to 'Log In', new_user_session_path %>
+							</li>
+						<% end %>
 	                </ul>
 	            </div>
 	        </div>
 	    </nav>
+
 	    <div class ='deer'>
+
+	   <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
 	        <%= yield %>
 	    </div>
   </body>
