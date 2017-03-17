@@ -275,8 +275,6 @@ header .header-content .inner p {
 }
 
 footer {
-    background-color:#2d2d2d;
-    opacity: 0.8;
     height: 50px;
     position: absolute;
     left: 0;
