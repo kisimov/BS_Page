@@ -48,6 +48,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem "bcrypt-ruby"
+gem 'postmark-rails'
 
 group :development do
   gem 'sqlite3'
