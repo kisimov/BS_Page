@@ -61,11 +61,18 @@
 	    </nav>
 
 	    <div class ='deer'>
-
-	   <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
 	        <%= yield %>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 text-center">
+						<br> <br> <br>
+					   <p class="notice"><%= notice %></p>
+				       <p class="alert"><%= alert %></p>
+					</div>
+				</div>
+			</div>
 	    </div>
+
 
 
 <footer id="footer">
