@@ -12,6 +12,6 @@ module BSPage
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.action_mailer.delivery_method = :postmark
-	config.action_mailer.postmark_settings = { :api_token => 'dde09c11-09b8-4d5f-a52b-c444f6fa0f03' }
+	config.action_mailer.postmark_settings = { :api_token => ENV['POSTMARK_API_TOKEN'] }
   end
 end
