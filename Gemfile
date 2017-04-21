@@ -50,3 +50,4 @@ gem "bcrypt-ruby"
 gem 'postmark-rails'
 gem 'pg'
 gem 'rake', '~> 12.0'
+gem 'rails_admin', '~> 1.1', '>= 1.1.1'
