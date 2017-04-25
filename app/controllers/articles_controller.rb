@@ -13,8 +13,12 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(article_params)
-    
+    @article = Article.new do |a|
+        a.post_author = current_user.username
+        a.title = article_params[:title]
+        a.text = article_params[:text]
+    end
+        
     if @article.save
       redirect_to @article
     else
@@ -46,7 +50,7 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit(:post_author, :title, :text)
   end
 
 end

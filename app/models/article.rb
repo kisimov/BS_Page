@@ -1,7 +1,9 @@
 class Article < ApplicationRecord
+	validates :post_author, presence: true
 	validates :title, presence: true
 	validates :text, presence: true
 	has_many :comments
+
 
 	def subject
 		title
