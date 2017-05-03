@@ -2,7 +2,6 @@
 
 Deploying on heroku http://test.kisimov.ru/
 
-
 Things you may want to cover:
 
 * Ruby version 2.3.3
