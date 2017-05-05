@@ -35,19 +35,14 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  gem 'sqlite3', '~> 1.3', '>= 1.3.13'
+  gem 'pg'
 end
 
 group :production do
 	gem 'pg'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
 gem 'devise'
 gem "bcrypt-ruby"
 gem 'postmark-rails'
-gem 'pg'
-gem 'rake', '~> 12.0'
 gem 'rails_admin', '~> 1.1', '>= 1.1.1'
