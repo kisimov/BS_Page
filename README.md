@@ -1,3 +1,5 @@
 # README
 
-Deploying on heroku http://test.kisimov.ru/
+<a href="http://test.kisimov.ru/">test.kisimov.ru</a>
+
+Deploying on Heroku
